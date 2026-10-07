@@ -1,9 +1,6 @@
-import { ImpuestoPage } from "../impuestos/ImpuestoPage";
-import { TodosTramitesPage } from "./TodosTramitesPage";
-import { useVistaStore } from "./vistaStore";
+import { LandingPage } from "../inicio/LandingPage";
 
-/** Pantalla de entrada: muestra la vista que el usuario eligió la última vez. */
+/** Pantalla de entrada: una portada fija, sin la animación de arranque. */
 export function PortadaPage() {
-  const vista = useVistaStore((s) => s.vista);
-  return vista === "todo" ? <TodosTramitesPage /> : <ImpuestoPage />;
+  return <LandingPage />;
 }

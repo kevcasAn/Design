@@ -99,12 +99,12 @@
 @keyframes vx-aparece { from { opacity: 0; transform: translateY(8px); } }
 @keyframes vx-desvanece { to { opacity: 0; } }
 
-.vx-nivel.is-sale-adelante { animation: vx-sale-izq 200ms ease forwards; }
-.vx-nivel.is-sale-atras { animation: vx-sale-der 200ms ease forwards; }
-.vx-nivel.is-entra-adelante > * { animation: vx-entra-der 380ms cubic-bezier(0.22, 1, 0.36, 1) both; animation-delay: calc(var(--i, 0) * 30ms); }
-.vx-nivel.is-entra-atras > * { animation: vx-entra-izq 380ms cubic-bezier(0.22, 1, 0.36, 1) both; animation-delay: calc(var(--i, 0) * 30ms); }
-.vx-aparece { animation: vx-aparece 320ms cubic-bezier(0.22, 1, 0.36, 1) both; }
-.is-sale { animation: vx-desvanece 200ms ease forwards; }
+.vx-nivel.is-sale-adelante,
+.vx-nivel.is-sale-atras,
+.vx-nivel.is-entra-adelante > *,
+.vx-nivel.is-entra-atras > *,
+.vx-aparece,
+.is-sale { animation: none; }
 
 @media (prefers-reduced-motion: reduce) {
   .vx-nivel.is-sale-adelante, .vx-nivel.is-sale-atras, .vx-nivel.is-entra-adelante > *, .vx-nivel.is-entra-atras > *, .vx-aparece, .is-sale { animation: none; }

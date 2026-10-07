@@ -1,4 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
+import { CONFIGURACION } from "../../datos/demo";
 import { obtenerConfiguracion } from "./api";
 import type { Configuracion } from "./api";
 
@@ -7,6 +8,7 @@ export function useConfiguracion() {
   return useQuery({
     queryKey: ["configuracion"],
     queryFn: obtenerConfiguracion,
+    initialData: CONFIGURACION,
     staleTime: Infinity
   });
 }
