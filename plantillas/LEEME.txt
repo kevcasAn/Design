@@ -1,0 +1,12 @@
+Plantillas de los archivos que piden las cargas (igual que ComplyTax).
+
+Pon aquí un Excel por cada archivo del catálogo (CatalogosArchivos). La pantalla busca,
+en este orden:
+  1. {IdCatalogoArchivo}.xlsx        por ejemplo 1.xlsx
+  2. {Nombre del catálogo}.xlsx      por ejemplo Detalle de ventas.xlsx
+
+Si no encuentra ninguno, RefundyTax genera la plantilla sola con los encabezados del
+catálogo y una hoja "Instrucciones" con las reglas de cada columna.
+
+Un archivo puesto aquí manda sobre la plantilla generada: sirve para dar formatos,
+listas desplegables o ejemplos que el catálogo no tiene.
