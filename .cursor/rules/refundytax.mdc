@@ -1,0 +1,9 @@
+---
+description: Reglas de arquitectura de la web RefundyTax (features, tokens en index.css)
+alwaysApply: true
+---
+
+Antes de crear o modificar código lee y sigue `AGENTS.md` en la raíz: una carpeta por feature en
+`src/features/`, llamadas a la API solo con TanStack Query a través de `shared/api/http.ts`,
+estado compartido con Zustand, colores y tamaños únicamente desde los tokens de `src/index.css`,
+palabras de la empresa con `useEtiquetas()`.
