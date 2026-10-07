@@ -32,8 +32,8 @@ que un F5 sobre una pantalla interna no devuelva 404.
 ## GitHub Pages
 
 Al empujar a `main`, `.github/workflows/pages.yml` compila con el prefijo del repositorio
-(`/Design/`) y publica el sitio. En el repositorio, Pages tiene que usar el origen
-**GitHub Actions** (Settings → Pages).
+(`/Design/`) y deja el sitio en la rama `gh-pages`. En Settings → Pages elige
+**Deploy from a branch**, rama `gh-pages` y carpeta `/ (root)`.
 
 `yarn build` sin variables sigue saliendo en la raíz, para IIS. Para armar el mismo
 build de Pages en local:
